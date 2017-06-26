@@ -1,0 +1,47 @@
+---
+title: "FARS Functions"
+author: "Peter Ho"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Introduction:
+
+US National Highway Trac Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suered in motor vechicle trac crashes.
+
+## Main Functions:
+### fars_summarize_years (years)
+This function shows the summary of FARS info (data frame). Count the accidents per month and year.
+
+```{r}
+library(pho)
+setwd("C:/Users/peterh/Documents/pho/extdata")
+fars_summarize_years(2013)
+```
+
+### fars_map_state (years)
+This function plots the State map with FARS data of a specific year.  If no data to plot, a message and NULL will return.
+
+```{r, fig.show='hold'}
+library(maps)
+setwd("C:/Users/peterh/Documents/pho/extdata")
+fars_map_state(48,2013)
+```
+
+## Other Functions:
+
+### make_filename (year)
+This function will make a filename based on the input year, which requires a numerical input.
+
+### fars_read_years (years)
+This function will take a list of years as input and read the corresponding FARS files of those years.
+
+### fars_read (filename)
+This function read FARS data (Fatality Analysis Reporting System) from a CSV file and returns a tibble.  If the path or file is incorrect, the fuction will stop with an error.
+
+
+

@@ -1,0 +1,15 @@
+Package: pho
+Type: Package
+Title: R Package Assignment
+Version: 0.1.0
+Author: Peter Ho
+Maintainer: Peter Ho <peter.ho@mail.com>
+Description: FARS functions
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
