@@ -1,5 +1,5 @@
 context("Summarize FARS data")
-setwd("C:/Users/peterh/Documents/pho/inst/extdata")
+setwd("~/pho/inst/extdata")
 test_that("the summarized data is a tbl_df for a year", {
     dat2013 <- fars_summarize_years(2013)
     expect_that(dat2013, is_a("tbl_df"))
