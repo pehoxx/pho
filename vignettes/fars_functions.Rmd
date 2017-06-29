@@ -19,7 +19,6 @@ This function shows the summary of FARS info (data frame). Count the accidents p
 
 ```{r}
 library(pho)
-setwd("~/pho/inst/extdata")
 fars_summarize_years(2013)
 ```
 
@@ -28,7 +27,6 @@ This function plots the State map with FARS data of a specific year.  If no data
 
 ```{r, fig.show='hold'}
 library(maps)
-setwd("~/pho/inst/extdata")
 fars_map_state(48,2013)
 ```
 
