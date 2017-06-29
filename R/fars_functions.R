@@ -1,11 +1,3 @@
-library(readr)
-library(dplyr)
-library(tidyr)
-library(magrittr)
-library(roxygen2)
-library(stats)
-library(maps)
-
 #'
 #' Read FARS files
 #'
@@ -92,6 +84,7 @@ fars_read_years <- function(years) {
 #'
 #' @importFrom   dplyr %>% bind_rows group_by summarize
 #' @importFrom   tidyr spread
+#' @import       magrittr
 #'
 #' @examples     \dontrun{fars_summarize_years(2013:2015)}
 #'

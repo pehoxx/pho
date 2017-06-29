@@ -8,8 +8,7 @@ Description: FARS functions
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Suggests: knitr,
-    rmarkdown,
-    testthat
+Suggests: knitr, rmarkdown, testthat
 VignetteBuilder: knitr
 RoxygenNote: 6.0.1
+Imports: dplyr, maps, readr, tidyr, graphics, magrittr
